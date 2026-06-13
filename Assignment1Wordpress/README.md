@@ -3,7 +3,7 @@
 ## 📌 Objective
 Use Terraform to provision a full WordPress stack on AWS, including:
 - EC2 instance running WordPress
-- Security groups (HTTP, outbound)
+- Security groups (HTTP, SSH, outbound)
 - User data / cloud-init to install dependencies
 - A working public endpoint
 - All resources defined in Terraform
@@ -38,6 +38,8 @@ Terraform/
 - AWS account with credentials configured. IAM role with `AmazonEC2FullAccess` permissions.
 - Terraform installed (>= 1.0)
 - An EC2 key pair in AWS (create one if you don't have it). Update `variables.tf` with your key name.
+- The security group includes an SSH rule restricted to 82.34.130.113/32 (mine). To SSH into the instance, replace the IP with your own (in `variables.tf`) and use your own key pair.
+
 ### Deployment Steps
 
 1. **Clone or download this repository**  
@@ -86,7 +88,7 @@ Set correct ownership (www-data:www-data) for Ubuntu.
 Enabled and started mariadb and apache2 services.
 
 ## Screenshots
-![Terraform Apply](<../Screenshots/Assignment 1/Terraform apply.png>)
-![Wordpress Installed](<../Screenshots/Assignment 1/Wordpress Install.png>)
-![Wordpress Startup Page](<../Screenshots/Assignment 1/Wordpress.png>)
-![Wordpress Home Page](<../Screenshots/Assignment 1/zainwordpress.png>)
+![alt text](<Screenshots/Terraform apply.png>)
+![alt text](<Screenshots/Wordpress Install.png>)
+![alt text](Screenshots/Wordpress.png)
+![alt text](Screenshots/zainwordpress.png)
