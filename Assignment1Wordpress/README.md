@@ -88,7 +88,7 @@ Set correct ownership (www-data:www-data) for Ubuntu.
 Enabled and started mariadb and apache2 services.
 
 ## Screenshots
-![alt text](<Screenshots/Terraform apply.png>)
-![alt text](<Screenshots/Wordpress Install.png>)
+![alt text](<Screenshots/'Terraform apply.png'>)
+![alt text](<Screenshots/'Wordpress Install.png'>)
 ![alt text](Screenshots/Wordpress.png)
 ![alt text](Screenshots/zainwordpress.png)
