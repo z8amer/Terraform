@@ -1,0 +1,14 @@
+#cloud-config
+
+#Update package lists and upgrade all installed packages
+package_update: true
+package_upgrade: true
+
+#List of packges to install
+packages:
+  - httpd
+
+# Commands to run after package install and file writes
+runcmd:
+  - systemctl enable httpd 
+  - systemctl start httpd
